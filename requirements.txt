@@ -1,0 +1,4 @@
+eel
+requests
+pywidevine 
+unidecode
