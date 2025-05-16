@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>GUI</title>
+  <script src="/eel.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" class="logo">
+
+    <div id="topSection">
+      <h3 id="userInfo" class="user-info" style="display:none"></h3>
+      <div class="toolbar">
+        <button id="loginBtn" onclick="startLogin()">Zaloguj</button>
+        <button id="logoutBtn" onclick="logout()" style="display:none">Wyloguj</button>
+        <button id="fetchTabBtn" onclick="showFetching()">Przechwytywanie</button>
+        <button id="downloadTabBtn" onclick="showDownloading()">Pobieranie</button>
+      </div>
+    </div>
+
+    <h2>Status:</h2>
+    <textarea id="status" readonly></textarea>
+    <progress id="progressBar" max="1" value="0"></progress>
+
+    <div class="input-group" id="postStatusButtons">
+      <div class="toolbar">
+        <button id="confirmButton" onclick="confirmCode()" style="display:none">✅ Potwierdziłem</button>
+      </div>
+
+      <div id="fetchSection" style="display:none">
+        <h2>Link:</h2>
+        <textarea id="urls" placeholder="https://player.pl/..."></textarea>
+        <div class="toolbar">
+          <button class="start-btn" onclick="startFetching()">🚀 Start</button>
+        </div>
+      </div>
+
+      <div id="downloadSection" style="display:none">
+        <h2>Pobieranie</h2>
+        <div class="toolbar">
+          <button onclick="chooseFolder()">📁 Wybierz folder</button>
+        </div>
+        <span id="selectedFolder" style="margin-left:10px;"></span>
+        <h3>Polecenia:</h3>
+        <textarea id="commandsList" readonly style="height:100px;"></textarea>
+        <div class="selectors">
+          <label>Jakość:</label>
+          <select id="resolutionSelect">
+            <option>1920x1080</option>
+            <option>1280x720</option>
+            <option>1024x576</option>
+            <option>960x540</option>
+          </select>
+          <label>Audio:</label>
+          <select id="audioSelect">
+            <option>polski</option>
+            <option>angielski</option>
+          </select>
+        </div>
+        <div class="toolbar">
+          <button class="start-btn" onclick="startDownload()">⬇️ Pobierz</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
