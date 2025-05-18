@@ -16,14 +16,19 @@ GUI do pobierania materiałów z [player.pl](https://player.pl), wspierający:
 
 ---
 
+## Demo
+![demo](https://github.com/vicuuu/player.pl-downloader/blob/main/demo.gif)
+
+---
+
 ## ⚠️ Ważne
 
-Ten program został stworzony wyłącznie w celach **edukacyjnych** i **badawczych**.  
+Ten program został stworzony wyłącznie w celach **edukacyjnych** i **badawczych**
 
 Nie zachęcam do:
 
 - łamania regulaminów usług VOD  
 - naruszania praw autorskich  
 
-Korzystasz z programu na **własną odpowiedzialność**.  
-Autor nie ponosi żadnej odpowiedzialności za niewłaściwe lub niezgodne z prawem wykorzystanie narzędzia.
+Korzystasz z programu na **własną odpowiedzialność** 
+Autor nie ponosi żadnej odpowiedzialności za niewłaściwe lub niezgodne z prawem wykorzystanie narzędzia
