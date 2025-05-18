@@ -16,7 +16,7 @@ GUI do pobierania materiałów z [player.pl](https://player.pl), wspierający:
 
 ---
 
-## Demo
+## 🎬 Demo
 ![demo](https://github.com/vicuuu/player.pl-downloader/blob/main/demo.gif)
 
 ---
